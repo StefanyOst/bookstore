@@ -1,0 +1,68 @@
+/* Reset básico */
+/* Limpando o estilo padrão dos navegadores e definindo a base para as fontes, cores e espaçamento */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: "georgia", serif;
+  background-color: #fdfcf9;
+  color: #2c2c2c;
+  line-height: 1.6;
+}
+
+/* Estilo do cabeçalho - título + introdução */
+
+header {
+  background-color: #003366;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #ffd700;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* Seção "Sobre Nós" */
+/* Usando Flexbox para deixar a img ao lado do texto */
+
+.sobre-nos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+  gap: 40px;
+  background-color: #fffbe6;
+}
+
+.sobre-nos img {
+  width: 45%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-nos div {
+  width: 50%;
+}
+
+.sobre-nos h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+.sobre-nos p {
+  font-size: 1.1rem;
+}
