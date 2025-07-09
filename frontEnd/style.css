@@ -6,21 +6,42 @@
   box-sizing: border-box;
 }
 
-/* Corpo da página */
-body {
-  font-family: "georgia", serif;
-  background-color: #fdfcf9;
-  color: #2c2c2c;
-  line-height: 1.6;
+/* Definição da paleta de cores da página */
+:root {
+  --cor-primaria: #1a1a2e;
+  --cor-secundaria: #16213e;
+  --accent-color: #e94560;
+  --destaques-dourado: #ffd700;
+  --texto-claro: #ffffff;
+  --texto-escuro: #2c2c2c;
+  --background-light: #f8f9fa; /* Fundo claro */
+  --background-card: #ffffff; /* Fundo de cards */
+  --sombra: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra padrão */
+  --bordas: 12px; /* Raio de borda padrão */
+  --transition: all 0.3s ease;
 }
 
-/* Estilo do cabeçalho - título + introdução */
+/* Configuração do corpo da página - Definindo a fonte principal, cor de fundo e altura mínima da página */
+body {
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, var(--background-light) 0%, #e8f4f8 100%);
+  color: var(--texto-escuro);
+  line-height: 1.6;
+  min-height: 100vh;
+}
 
+/* Criando um cabeçalho com gradiente e efeito paralaxe */
 header {
-  background-color: #003366;
-  color: #fff;
-  padding: 40px 20px;
+  background-origin: linear-gradient(
+    135deg,
+    var(--cor-primaria) 0%,
+    var(--cor-secundaria) 100%
+  );
+  color: var(--texto-claro);
+  padding: 80px 20px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 header h1 {
