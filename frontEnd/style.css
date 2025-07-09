@@ -44,10 +44,18 @@ header {
   overflow: hidden;
 }
 
-header h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-  color: #ffd700;
+/* Criando efeito de fundo decorativo no header */
+header::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>')
+    repeat;
+  animation: float 20s inifinite linear;
+  z-index: 1;
 }
 
 header p {
